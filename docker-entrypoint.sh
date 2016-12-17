@@ -38,7 +38,7 @@ function check_args() {
 	else
 		echo "${PASSWORD}" >${HUBIC_PASSFILE}
 		chmod 400 ${HUBIC_PASSFILE}
-		unset ${PASSWORD}
+		unset PASSWORD
 	fi
 }
 
@@ -97,4 +97,3 @@ hubic_login_init
 export DBUS_LAUNCH_INIT
 export HUBIC_INIT
 supervisord -c /etc/supervisor/supervisord.conf
-
