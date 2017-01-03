@@ -56,4 +56,3 @@ RUN chmod +x /docker-entrypoint.sh
 VOLUME ["/root/.config/hubiC"]
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-
