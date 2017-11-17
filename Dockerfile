@@ -10,7 +10,7 @@
 #                         flem/rpi-hubic
 
 
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER Franck Lemoine <franck.lemoine@flem.fr>
 
 # properly setup debian sources
@@ -31,6 +31,7 @@ RUN buildDeps=' \
 		libmono-system-drawing4.0-cil \
 		libmono-system-runtime-serialization4.0-cil \
 		libmono-system-xml-linq4.0-cil \
+		ca-certificates-mono \
 		wget \
 		supervisor \
 	' \
